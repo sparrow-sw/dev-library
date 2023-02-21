@@ -1,6 +1,6 @@
 {
   "name": "dev-library",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "linter and test helpers for developing node js applications",
   "type": "module",
   "main": "index.js",
@@ -10,7 +10,7 @@
     "test:coverage": "nyc mocha './src/**/*.test.js' --timeout 60000 --exit",
     "lint": "eslint .",
     "fix": "echo \"Running linter...\" && yarn run lint --fix",
-    "bump": "$(npm bin)/bump --tag --commit && git push && git push --tags"
+    "bump": "bump --tag --commit && git push && git push --tags"
   },
   "author": "Aaron Kauffman",
   "license": "MIT",
